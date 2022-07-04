@@ -3,6 +3,8 @@ import SearchBar from "./components/searchBar/SearchBar";
 import Youtube from "./apis/Youtube";
 import VideoList from "./components/videoList/VideoList";
 import VideoDetail from "./components/videoDetail/VideoDetail";
+import SignUp from "./container/signUp/SignUp";
+import LogIn from "./container/logIn/LogIn";
 
 class App extends React.Component {
   state = { videos: [], selectedVideo: null };
@@ -23,6 +25,7 @@ class App extends React.Component {
     return (
       <div className="row">
         <SearchBar afterSubmit={this.onTermSubmit} />
+
         <div className="col-lg-8">
           <VideoDetail video={this.state.SelectedVideo} />
         </div>
@@ -33,6 +36,9 @@ class App extends React.Component {
           />
         </div>
       </div>
+      // <SignUp />
+      // <SearchBar />
+      // <LogIn />
     );
   }
 }

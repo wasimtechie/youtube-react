@@ -1,4 +1,5 @@
 import React from "react";
+import SignUp from "../../container/signUp/SignUp";
 
 class SearchBar extends React.Component {
   state = { term: "" };
